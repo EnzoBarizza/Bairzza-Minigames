@@ -1,0 +1,24 @@
+name: ptcplugin
+version: '${version}'
+main: br.barizza.barizzaminigames.BarizzaMinigames
+api-version: '1.20'
+permissions:
+  ptc.main:
+    default: op
+commands:
+  ptcgivechicken:
+    permission: ptc.main
+    description: Give a chicken to a determined player
+    usage: /ptcgivechicken [player]
+  ptcplacegate:
+    permission: ptc.main
+    usage: /ptcplacegate
+  ptcstartevent:
+    permission: ptc.main
+    description: Starts a event
+    usage: /ptcstartevent [event]
+  ptcsetunbreakable:
+    permission: ptc.main
+    usage: /ptcsetunbreakable
+libraries:
+  - org.jetbrains.kotlin:kotlin-stdlib:1.9.22
